@@ -1,0 +1,76 @@
+@import './mixin.scss';
+.title {
+  color:#444EFF;
+  width: 100%;
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+.discount {
+  position: relative;
+  margin: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #444EFF;
+  box-shadow: 0 0 2px #444EFF;
+  padding: 15px;
+  height: 90px;
+  box-sizing: border-box;
+  overflow: hidden;
+  .icon{
+    float: left;
+  }
+  .desc{
+    float: left;
+    .name{
+      overflow: hidden;
+      max-width: calc(100vw - 127px);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-left: 15px;
+      font-size: 0.8rem;
+      color: #444EFF;
+    }
+    .price{
+      padding-left: 15px;
+      color: #FF2023;
+      text-decoration: line-through;
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+    .category{
+      float: left;
+    }
+    .newFromeDate{
+      padding-left: 15px;
+      font-size: 0.8rem;
+      color: #FFCC00;
+    }
+  }
+  .link{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 70px;
+    .btn{
+      font-size: 0.8rem;
+      line-height: 24px;
+      height: 24px;
+      width: 60px;
+      background: #444EFF;
+      border-radius: 30px;
+      float: right;
+      position: absolute;
+      bottom: 15px;
+      right: 15px; 
+    }
+  }
+}
+.footer{
+  color: #444EFF;
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}

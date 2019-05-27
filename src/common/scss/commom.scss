@@ -1,0 +1,31 @@
+html,
+body {
+	width: 100%;
+	background-color: #fafafa;
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: -apple-system, 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons',
+		'Apple Legacy Chevron', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-input-placeholder {
+	color: #C8C8C8;
+	font-size: 15px;
+}
+
+input:disabled, textarea:disabled {
+	background: #ffffff;
+	color: #333333;
+    font-size: 15px;
+	opacity: 1;
+	// -webkit-text-fill-color:#333333;
+}
+button {
+	outline: none;
+}

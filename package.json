@@ -1,0 +1,184 @@
+{
+  "name": "wnl_other_half",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.5",
+    "js-base64": "^2.4.9",
+    "vconsole": "^3.2.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-plugin-unit-jest": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/eslint-config-prettier": "^4.0.0",
+    "@vue/eslint-config-standard": "^3.0.5",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard",
+      "prettier"
+    ],
+    "rules": {
+      "import/extensions": [
+        2,
+        "always",
+        {
+          "js": "never"
+        }
+      ],
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "no-tabs": "off",
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": true
+        }
+      ],
+      "no-unused-vars": [
+        2,
+        {
+          "vars": "all",
+          "args": "after-used"
+        }
+      ],
+      "brace-style": [
+        2,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "semi": 0,
+      "no-useless-constructor": 0,
+      "no-console": 0,
+      "prefer-const": 0,
+      "prefer-template": 0,
+      "no-param-reassign": 0,
+      "camelcase": 0,
+      "comma-dangle": [
+        1,
+        "never"
+      ],
+      "spaced-comment": [
+        0,
+        "always"
+      ],
+      "space-before-function-paren": 0,
+      "func-names": 0,
+      "no-underscore-dangle": 0,
+      "import/prefer-default-export": 1,
+      "class-methods-use-this": 0,
+      "no-prototype-builtins": 0,
+      "import/no-extraneous-dependencies": 0,
+      "radix": 0,
+      "no-new": 0,
+      "new-cap": 0,
+      "eol-last": "off",
+      "linebreak-style": "off",
+      "max-len": [
+        2,
+        150,
+        {
+          "ignoreComments": true,
+          "ignoreUrls": true
+        }
+      ],
+      "no-mixed-operators": [
+        0,
+        {
+          "allowSamePrecedence": true
+        }
+      ],
+      "arrow-parens": [
+        1,
+        "as-needed",
+        {
+          "requireForBlockBody": true
+        }
+      ],
+      "prefer-destructuring": 0,
+      "wrap-iife": [
+        2,
+        "inside",
+        {
+          "functionPrototypeMethods": true
+        }
+      ],
+      "no-debugger": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8",
+    "Android >= 4.0",
+    "ios >= 7"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
